@@ -3,9 +3,13 @@
 Vision Transformer Hashing (VTS) utilizes the Vision Transformer to generate the hash code for image retrieval. 
 It is tested under different retrieval frameworks such as DSH, HashNet, GreedyHash, IDHN, CSQ and DPN.
 
-This code uses the Vision Transformer (ViT) code and pretrained model (https://github.com/jeonsworld/ViT-pytorch) and DeepHash framework (https://github.com/swuxyj/DeepHash-pytorch).
+![VTS](VTS.JPG)
+
+
 
 # How to Run
+
+This code uses the Vision Transformer (ViT) code and pretrained model (https://github.com/jeonsworld/ViT-pytorch) and DeepHash framework (https://github.com/swuxyj/DeepHash-pytorch).
 
 Download the ViT pretrained models from official repository and keep under pretrainedVIT directory:
 
@@ -22,3 +26,10 @@ python DSH.py
 python CSQ.py
 
 python DPN.py
+
+Select the backbone such as AlexNet, ResNet, ViT-16 or ViT-32 before running.
+
+# Paper Citation
+Please cite following paper if you make use of this code in your research:
+
+Shiv Ram Dubey, Satish Kumar Singh, and Wei-Ta Chu. Vision Transformer Hashing for Image Retrieval. IEEE International Conference on Multimedia and Expo (ICME), July 2022.
